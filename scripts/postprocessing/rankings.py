@@ -35,6 +35,9 @@ def cycle_detect(pairs):
     # get all condorcet losers (pairs that loose to all other pairs)
     # idea: filter all losers that are never winners
     # print("pairs", pairs)
+     # get all condorcet losers (pairs that loose to all other pairs)
+    # idea: filter all losers that are never winners
+    # print("pairs", pairs)
     if len(pairs) <= 1:
         return False
     losers = [c_lose for c_lose in np.unique(pairs[:, 1]) if c_lose not in pairs[:, 0]]
