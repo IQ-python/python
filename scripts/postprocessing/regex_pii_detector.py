@@ -30,7 +30,8 @@ regex_patterns = {
     "stripe_standard_api": r"sk_live_[0-9a-zA-Z]{24}",
     "stripe_restricted_api": r"rk_live_[0-9a-zA-Z]{24}",
     "github_access_token": r"[a-zA-Z0-9_-]*:[a-zA-Z0-9_\-]+@github\.com*",
-   /* "rsa_private_key": r"-----BEGIN RSA PRIVATE KEY-----",
+   /* 
+    "rsa_private_key": r"-----BEGIN RSA PRIVATE KEY-----",
     "ssh_dsa_private_key": r"-----BEGIN DSA PRIVATE KEY-----",
     "ssh_ec_private_key": r"-----BEGIN EC PRIVATE KEY-----",
     "pgp_private_block": r"-----BEGIN PGP PRIVATE KEY BLOCK-----",
@@ -67,7 +68,8 @@ regexes_patterns_inverse = {
     r"[a-zA-Z0-9_-]*:[a-zA-Z0-9_\-]+@github\.com*": "github_access_token",
     r"-----BEGIN RSA PRIVATE KEY-----": "rsa_private_key",
     r"-----BEGIN EC PRIVATE KEY-----": "ssh_ec_private_key",
-    r"-----BEGIN DSA PRIVATE KEY-----": "ssh_dsa_private_key",*/
+    r"-----BEGIN DSA PRIVATE KEY-----": "ssh_dsa_private_key",
+    */
     r"-----BEGIN PGP PRIVATE KEY BLOCK-----": "pgp_private_block",
     r"ey[A-Za-z0-9_-]*\.[A-Za-z0-9._-]*|ey[A-Za-z0-9_\/+-]*\.[A-Za-z0-9._\/+-]*": "json_web_token",
     r"(?!666|000|9\\d{2})\\d{3}-(?!00)\\d{2}-(?!0{4})\\d{4}$": "social_security_number",
