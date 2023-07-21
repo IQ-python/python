@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+#!/usr/bin/env python3
 
 """This file is for moderators to verify new users in the lobby.
 
